@@ -25,7 +25,7 @@ const DetailContainer = () => {
     const [imgModalState, setImgModalState] = useState(false);
     useEffect(()=>{
         const getRoomAndUserList = async () => {
-            const response = await fetch(`http://localhost:8000/room/detail?${searchParams}`);
+            const response = await fetch(`https://port-0-jsfull-project-team1-server-ly8jj9oj60ccae9a.sel5.cloudtype.app/room/detail?${searchParams}`);
             const data = response.json();
             return data;
         };

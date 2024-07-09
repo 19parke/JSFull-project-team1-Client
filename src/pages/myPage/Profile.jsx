@@ -31,7 +31,7 @@ const Profile = ({info}) => {
                 </div>
             </>)
         }else{
-            imgRef.current.src = info.profileImg?`http://localhost:8000/${info.profileImg}`:`${publicUrl}/images/pages/detail/emptyUser.jpg`;
+            imgRef.current.src = info.profileImg?`https://port-0-jsfull-project-team1-server-ly8jj9oj60ccae9a.sel5.cloudtype.app/${info.profileImg}`:`${publicUrl}/images/pages/detail/emptyUser.jpg`;
             setContent(<></>);
         }
     }
@@ -44,7 +44,7 @@ const Profile = ({info}) => {
     }
     const uploadFetch = async (formData) => {
         try{
-            const response = await fetch("http://localhost:8000/user/myPage", {
+            const response = await fetch("https://port-0-jsfull-project-team1-server-ly8jj9oj60ccae9a.sel5.cloudtype.app/user/myPage", {
                 method : "POST",
                 body : formData,
             })

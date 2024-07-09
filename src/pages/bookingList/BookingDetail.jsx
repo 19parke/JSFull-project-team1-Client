@@ -100,7 +100,7 @@ const BookingDetail = ({item, isActive, index,setItemData, itemData}) => {
     // // 그냥 booking에서 delete. 
     const handleConfirmRemove =  async() => {
         
-        try{ const response = await fetch(`http://localhost:8000/booking/updateBookingList`,
+        try{ const response = await fetch(`https://port-0-jsfull-project-team1-server-ly8jj9oj60ccae9a.sel5.cloudtype.app/booking/updateBookingList`,
                 { 
                     method : "POST",
                     headers : {
